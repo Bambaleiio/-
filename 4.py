@@ -5,6 +5,13 @@ exhibits = int(input("кол-во красивых экспонатов"))
 
 all_time = exhibits * 5
 
+days = all_time // 480
+all_time -= days * 480
+
+years = days // 365
+days %= 365
+
+print("years", years, "days", days, "mins", all_time)
 
 # year = 365 * 8 = 2920h = 175200m
 # X years Y hours Z min
