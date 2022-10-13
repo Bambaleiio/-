@@ -12,6 +12,3 @@ years = days // 365
 days %= 365
 
 print("years", years, "days", days, "mins", all_time)
-
-# year = 365 * 8 = 2920h = 175200m
-# X years Y hours Z min
