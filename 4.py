@@ -3,12 +3,9 @@ print("Кол-во просмотренных экспонатов:", viewing_ye
 
 exhibits = int(input("кол-во красивых экспонатов"))
 
-all_time = exhibits * 5
+years = exhibits // 35040
+exhibits %= 35040
+days = exhibits // 96
+exhibits %= 96
 
-days = all_time // 480
-all_time -= days * 480
-
-years = days // 365
-days %= 365
-
-print("years", years, "days", days, "mins", all_time)
+print("years", years, "days", days, "mins", exhibits * 5)
